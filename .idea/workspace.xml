@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32a4b0fb-549c-40fc-bdd1-616e91efee87" name="Default Changelist" comment="" />
+    <list default="true" id="32a4b0fb-549c-40fc-bdd1-616e91efee87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Serializer/UserAttributeNormalizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Serializer/UserContextBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a2d50f49-9cf3-42b1-aee8-f73db233523a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a2d50f49-9cf3-42b1-aee8-f73db233523a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/PasswordHashSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/PasswordHashSubscriber.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +64,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="relief_docker: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="comment: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="relief_docker: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -198,17 +216,17 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@6c16214e" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7bf3aa82" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@630f32f4" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@64ef8bd9" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2ff58c9b" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@653eaa01" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -242,12 +260,28 @@
       <workItem from="1626424351483" duration="19247000" />
       <workItem from="1626682625738" duration="18704000" />
       <workItem from="1626942757405" duration="20239000" />
-      <workItem from="1627029246276" duration="600000" />
+      <workItem from="1627029246276" duration="18151000" />
+      <workItem from="1627288297194" duration="10755000" />
+      <workItem from="1627307322451" duration="6284000" />
     </task>
+    <task id="LOCAL-00001" summary="ROLES">
+      <created>1627054210735</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627054210735</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="ROLES" />
+    <option name="LAST_COMMIT_MESSAGE" value="ROLES" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="187" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626267930245">
@@ -258,10 +292,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="648" y="330" width="613" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.997@0.27.1920.997" timestamp="1626426077541" />
-    <state x="749" y="213" width="451" height="666" key="#com.intellij.ide.util.MemberChooser" timestamp="1626362227184">
+    <state x="749" y="213" width="451" height="666" key="#com.intellij.ide.util.MemberChooser" timestamp="1627313827035">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="749" y="213" width="451" height="666" key="#com.intellij.ide.util.MemberChooser/0.27.1920.997@0.27.1920.997" timestamp="1626362227184" />
+    <state x="749" y="213" width="451" height="666" key="#com.intellij.ide.util.MemberChooser/0.27.1920.997@0.27.1920.997" timestamp="1627313827035" />
     <state x="693" y="283" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1626958055334">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
@@ -270,34 +304,46 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="704" y="141" width="501" height="775" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.27.1920.997@0.27.1920.997" timestamp="1626949607268" />
-    <state width="1291" height="61" key="GridCell.Tab.0.bottom" timestamp="1627029246337">
+    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2" timestamp="1627054210616">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state width="1291" height="61" key="GridCell.Tab.0.bottom/0.27.1920.997@0.27.1920.997" timestamp="1627029246337" />
-    <state width="1291" height="61" key="GridCell.Tab.0.center" timestamp="1627029246337">
+    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1627054210616" />
+    <state width="1291" height="61" key="GridCell.Tab.0.bottom" timestamp="1627047882792">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state width="1291" height="61" key="GridCell.Tab.0.center/0.27.1920.997@0.27.1920.997" timestamp="1627029246337" />
-    <state width="1291" height="61" key="GridCell.Tab.0.left" timestamp="1627029246336">
+    <state width="1291" height="61" key="GridCell.Tab.0.bottom/0.27.1920.997@0.27.1920.997" timestamp="1627047882792" />
+    <state width="1291" height="61" key="GridCell.Tab.0.center" timestamp="1627047882792">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state width="1291" height="61" key="GridCell.Tab.0.left/0.27.1920.997@0.27.1920.997" timestamp="1627029246336" />
-    <state width="1291" height="61" key="GridCell.Tab.0.right" timestamp="1627029246337">
+    <state width="1291" height="61" key="GridCell.Tab.0.center/0.27.1920.997@0.27.1920.997" timestamp="1627047882792" />
+    <state width="1291" height="61" key="GridCell.Tab.0.left" timestamp="1627047882791">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state width="1291" height="61" key="GridCell.Tab.0.right/0.27.1920.997@0.27.1920.997" timestamp="1627029246337" />
-    <state x="368" y="363" width="681" height="408" key="NewPhpClassDialog" timestamp="1626958493846">
+    <state width="1291" height="61" key="GridCell.Tab.0.left/0.27.1920.997@0.27.1920.997" timestamp="1627047882791" />
+    <state width="1291" height="61" key="GridCell.Tab.0.right" timestamp="1627047882792">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="368" y="363" width="681" height="408" key="NewPhpClassDialog/0.27.1920.997@0.27.1920.997" timestamp="1626958493846" />
+    <state width="1291" height="61" key="GridCell.Tab.0.right/0.27.1920.997@0.27.1920.997" timestamp="1627047882792" />
+    <state x="368" y="363" width="681" height="408" key="NewPhpClassDialog" timestamp="1627307991404">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="368" y="363" width="681" height="408" key="NewPhpClassDialog/0.27.1920.997@0.27.1920.997" timestamp="1627307991404" />
     <state x="383" y="178" width="1022" height="737" key="SettingsEditor" timestamp="1626358950332">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="383" y="178" width="1022" height="737" key="SettingsEditor/0.27.1920.997@0.27.1920.997" timestamp="1626358950332" />
-    <state x="839" y="412" width="367" height="325" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1626346894111">
+    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1627054218387">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="839" y="412" width="367" height="325" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.27.1920.997@0.27.1920.997" timestamp="1626346894111" />
+    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1627054218387" />
+    <state x="839" y="412" width="367" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1627048453505">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="839" y="412" width="367" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.27.1920.997@0.27.1920.997" timestamp="1627048453505" />
+    <state x="693" y="333" width="524" height="391" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1627044145376">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="693" y="333" width="524" height="391" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.27.1920.997@0.27.1920.997" timestamp="1627044145376" />
     <state x="857" y="221" width="566" height="727" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1626173517227">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
@@ -306,21 +352,25 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="811" y="258" width="287" height="548" key="com.intellij.database.view.ui.DbObjectDialog/0.27.1920.997@0.27.1920.997" timestamp="1625841096973" />
-    <state x="131" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1627029246053">
+    <state x="131" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1627307321829">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="131" y="353" key="com.intellij.ide.util.TipDialog/0.27.1920.997@0.27.1920.997" timestamp="1627029246053" />
-    <state x="605" y="138" width="941" height="807" key="find.popup" timestamp="1626961216101">
+    <state x="131" y="353" key="com.intellij.ide.util.TipDialog/0.27.1920.997@0.27.1920.997" timestamp="1627307321829" />
+    <state x="483" y="126" width="944" height="805" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1627038529197">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="605" y="138" width="941" height="807" key="find.popup/0.27.1920.997@0.27.1920.997" timestamp="1626961216101" />
-    <state x="144" y="238" key="run.anything.popup" timestamp="1626342940463">
+    <state x="483" y="126" width="944" height="805" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.997@0.27.1920.997" timestamp="1627038529197" />
+    <state x="605" y="138" width="941" height="807" key="find.popup" timestamp="1627037288779">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="144" y="238" key="run.anything.popup/0.27.1920.997@0.27.1920.997" timestamp="1626342940463" />
-    <state x="623" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1626960771718">
+    <state x="605" y="138" width="941" height="807" key="find.popup/0.27.1920.997@0.27.1920.997" timestamp="1627037288779" />
+    <state x="144" y="238" key="run.anything.popup" timestamp="1627035754914">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="623" y="245" width="672" height="678" key="search.everywhere.popup/0.27.1920.997@0.27.1920.997" timestamp="1626960771718" />
+    <state x="144" y="238" key="run.anything.popup/0.27.1920.997@0.27.1920.997" timestamp="1627035754914" />
+    <state x="543" y="282" width="672" height="678" key="search.everywhere.popup" timestamp="1627312588590">
+      <screen x="0" y="27" width="1920" height="997" />
+    </state>
+    <state x="543" y="282" width="672" height="678" key="search.everywhere.popup/0.27.1920.997@0.27.1920.997" timestamp="1627312588590" />
   </component>
 </project>

@@ -4019,73 +4019,88 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="913" parent="291" name="IDX_9474526CF675F31B">
+    <column id="913" parent="291" name="blog_post_id">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="914" parent="291" name="IDX_9474526CF675F31B">
       <ColNames>author_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="914" parent="291" name="PRIMARY">
+    <index id="915" parent="291" name="IDX_9474526CA77FBEAF">
+      <ColNames>blog_post_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="916" parent="291" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="915" parent="291" name="FK_9474526CF675F31B">
+    <foreign-key id="917" parent="291" name="FK_9474526CF675F31B">
       <ColNames>author_id</ColNames>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="916" parent="292" name="version">
+    <foreign-key id="918" parent="291" name="FK_9474526CA77FBEAF">
+      <ColNames>blog_post_id</ColNames>
+      <RefTableName>blog_post</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="919" parent="292" name="version">
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="917" parent="292" name="executed_at">
+    <column id="920" parent="292" name="executed_at">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="918" parent="292" name="execution_time">
+    <column id="921" parent="292" name="execution_time">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="919" parent="292" name="PRIMARY">
+    <key id="922" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="920" parent="293" name="id">
+    <column id="923" parent="293" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="921" parent="293" name="username">
+    <column id="924" parent="293" name="username">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="922" parent="293" name="password">
+    <column id="925" parent="293" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="923" parent="293" name="name">
+    <column id="926" parent="293" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="924" parent="293" name="email">
+    <column id="927" parent="293" name="email">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="925" parent="293" name="PRIMARY">
+    <key id="928" parent="293" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
