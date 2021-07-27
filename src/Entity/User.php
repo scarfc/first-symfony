@@ -14,6 +14,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\Validator\Constraints\UserPassword;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
+use App\Controller\ResetPasswordAction;
 
 /**
  * @ApiResource(
@@ -32,6 +33,15 @@ use Symfony\Component\Validator\Constraints as Assert;
  *             "normalization_context"={
  *                  "groups"={"get"}
  *               }
+ *         },
+ *         "put-reset-password"={
+ *               "access_control"="is_granted('IS_AUTHENTICATED_FULLY') and object == user",
+ *               "method"="PUT",
+ *               "path"="/users/{id}/reset-password",
+ *               "controller"=ResetPasswordAction::class,
+ *               "denormalization_context"={
+ *                  "groups"={"put-reset-password"}
+ *             },
  *         }
  *     },
  *     collectionOperations={
@@ -72,28 +82,30 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"get", "post", "get-comment-with-author", "get-blog-post-with-author"})
-     * @Assert\NotBlank()
-     * @Assert\Length(min=6, max=255)
+     * @Assert\NotBlank(groups={"post"})
+     * @Assert\Length(min=6, max=255, groups={"post"})
      */
     private $username;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"post"})
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(groups={"post"})
      * @Assert\Regex(
      *     pattern="/(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{7,}/",
-     *     message="Password must be seven characters long and contain at least one digit, one upper case letter and one lower case letter"
+     *     message="Password must be seven characters long and contain at least one digit, one upper case letter and one lower case letter",
+     *     groups={"post"}
      * )
      */
     private $password;
 
     /**
      * @Groups({"post"})
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(groups={"post"})
      * @Assert\Expression(
      *     "this.getPassword() === this.getRetypedPassword()",
-     *     message="Passwords does not match"
+     *     message="Passwords does not match",
+     *     groups={"post"}
      * )
      */
     private $retypedPassword;
@@ -128,17 +140,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"get", "post", "put", "get-comment-with-author", "get-blog-post-with-author"})
-     * @Assert\NotBlank()
-     * @Assert\Length(min=5, max=255)
+     * @Assert\NotBlank(groups={"post"})
+     * @Assert\Length(min=5, max=255, groups={"post", "put"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"post", "put", "get-admin", "get-owner"})
-     * @Assert\NotBlank()
-     * @Assert\Email()
-     * @Assert\Length(min=6, max=255)
+     * @Assert\NotBlank(groups={"post"})
+     * @Assert\Email(groups={"post", "put"})
+     * @Assert\Length(min=6, max=255, groups={"post", "put"})
      */
     private $email;
 
@@ -159,6 +171,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * @Groups({"get-admin", "get-owner"})
      */
     private $roles;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $passwordChangeData;
 
     public function __construct()
     {
@@ -305,4 +322,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         $this->oldPassword = $oldPassword;
     }
+
+    public function getPasswordChangeData()
+    {
+        return $this->passwordChangeData;
+    }
+
+    public function setPasswordChangeData($passwordChangeData): void
+    {
+        $this->passwordChangeData = $passwordChangeData;
+    }
+
+
 }
