@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32a4b0fb-549c-40fc-bdd1-616e91efee87" name="Default Changelist" comment="USERS ROLES">
-      <change afterPath="$PROJECT_DIR$/src/Entity/UserConfirmation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/UserConfirmationSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/TokenGenerator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/UserEnabledChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/AuthoredEntitySubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/PasswordHashSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Serializer/UserAttributeNormalizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Serializer/UserAttributeNormalizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/UserRegisterSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +176,10 @@
       <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
       <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
       <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1uzMqeienHX82K05dFsgdZn6zNt" />
@@ -256,7 +257,7 @@
       <workItem from="1627288297194" duration="10755000" />
       <workItem from="1627307322451" duration="6544000" />
       <workItem from="1627375997105" duration="19577000" />
-      <workItem from="1627460897994" duration="8306000" />
+      <workItem from="1627460897994" duration="11928000" />
     </task>
     <task id="LOCAL-00001" summary="ROLES">
       <created>1627054210735</created>
@@ -279,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627390192174</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="USERS ROLES">
+      <created>1627469552934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627469552934</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,9 +297,9 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="ROLES" />
-    <MESSAGE value="USERS ROLES" />
     <MESSAGE value="Password Reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password Reset" />
+    <MESSAGE value="USERS ROLES" />
+    <option name="LAST_COMMIT_MESSAGE" value="USERS ROLES" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="187" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626267930245">
@@ -318,10 +326,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="704" y="141" width="501" height="775" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.27.1920.997@0.27.1920.997" timestamp="1626949607268" />
-    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2" timestamp="1627390192042">
+    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2" timestamp="1627469583680">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1627390192042" />
+    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1627469583680" />
     <state width="1291" height="61" key="GridCell.Tab.0.bottom" timestamp="1627047882792">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
@@ -346,10 +354,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="383" y="178" width="1022" height="737" key="SettingsEditor/0.27.1920.997@0.27.1920.997" timestamp="1626358950332" />
-    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1627390205275">
+    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1627469589957">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1627390205275" />
+    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1627469589957" />
     <state x="839" y="412" width="367" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1627048453505">
       <screen x="0" y="27" width="1920" height="997" />
     </state>

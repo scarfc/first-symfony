@@ -6,6 +6,8 @@ namespace App\EventSubscriber;
 use ApiPlatform\Core\EventListener\EventPriorities;
 use App\Entity\User;
 use App\Security\TokenGenerator;
+use Swift_Mailer;
+use Swift_Message;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
@@ -22,14 +24,20 @@ class UserRegisterSubscriber implements EventSubscriberInterface
      * @var TokenGenerator
      */
     private $tokenGenerator;
+    /**
+     * @var \swift_Mailer
+     */
+    private $mailer;
 
     public function __construct(
         UserPasswordHasherInterface $passwordEncoder,
-        TokenGenerator $tokenGenerator
+        TokenGenerator $tokenGenerator,
+            \swift_Mailer $mailer
     )
     {
         $this->passwordEncoder = $passwordEncoder;
         $this->tokenGenerator = $tokenGenerator;
+        $this->mailer = $mailer;
     }
 
     public static function getSubscribedEvents()
@@ -57,6 +65,14 @@ class UserRegisterSubscriber implements EventSubscriberInterface
         $user->setConfirmationToken(
             $this->tokenGenerator->getRandomSecureToken()
         );
+
+        // send e-mail here...
+        $message = (new Swift_Message('Hello From API PLATFORM!'))
+            ->setFrom('nourudemy@gmail.com')
+            ->setTo('nourudemy@gmail.com')
+            ->setBody('Hello, how are you?');
+
+        $this->mailer->send($message);
 
         }
 
