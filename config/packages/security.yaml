@@ -27,8 +27,9 @@ security:
                 failure_handler: lexik_jwt_authentication.handler.authentication_failure
             guard:
                 authenticators:
-                    - lexik_jwt_authentication.jwt_token_authenticator
-
+#                    - lexik_jwt_authentication.jwt_token_authenticator
+                    - App\Security\TokenAuthenticator
+            user_checker: App\Security\UserEnabledChecker
 
 
     # Easy way to control access for large sections of your site
