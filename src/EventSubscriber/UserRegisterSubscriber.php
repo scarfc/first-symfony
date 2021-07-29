@@ -4,9 +4,9 @@
 namespace App\EventSubscriber;
 
 use ApiPlatform\Core\EventListener\EventPriorities;
+use App\Email\Mailer;
 use App\Entity\User;
 use App\Security\TokenGenerator;
-use Swift_Mailer;
 use Swift_Message;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -25,14 +25,14 @@ class UserRegisterSubscriber implements EventSubscriberInterface
      */
     private $tokenGenerator;
     /**
-     * @var \swift_Mailer
+     * @var Mailer
      */
     private $mailer;
 
     public function __construct(
         UserPasswordHasherInterface $passwordEncoder,
         TokenGenerator $tokenGenerator,
-            \swift_Mailer $mailer
+        Mailer $mailer
     )
     {
         $this->passwordEncoder = $passwordEncoder;
@@ -67,12 +67,7 @@ class UserRegisterSubscriber implements EventSubscriberInterface
         );
 
         // send e-mail here...
-        $message = (new Swift_Message('Hello From API PLATFORM!'))
-            ->setFrom('nourudemy@gmail.com')
-            ->setTo('nourudemy@gmail.com')
-            ->setBody('Hello, how are you?');
-
-        $this->mailer->send($message);
+        $this->mailer->sendConfirmationEmail($user);
 
         }
 
