@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Annotation\ApiSubresource;
 use App\Repository\BlogPostRepository;
@@ -11,10 +12,28 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter;
 
 /**
- * @ORM\Entity(repositoryClass=BlogPostRepository::class)
+ * @ORM\Entity(repositoryClass="App\Repository\BlogPostRepository")
+ * @ApiFilter(
+ *     SearchFilter::class,
+ *     properties={
+ *          "id": "exact",
+ *          "title": "partial",
+ *          "content": "partial",
+ *          "author": "exact"
+ *     }
+ * )
+ * @ApiFilter(
+ *     DateFilter::class,
+ *     properties={
+ *          "published"
+ *     }
+ * )
  * @ApiResource(
+ *     attributes={"order"={"published": "DESC"}},
  *     itemOperations={
  *          "get"={
  *              "normalization_context"={
