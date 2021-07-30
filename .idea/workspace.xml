@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32a4b0fb-549c-40fc-bdd1-616e91efee87" name="Default Changelist" comment="">
+    <list default="true" id="32a4b0fb-549c-40fc-bdd1-616e91efee87" name="Default Changelist" comment="Filtering &amp; Sorting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +282,7 @@
       <workItem from="1627375997105" duration="19577000" />
       <workItem from="1627460897994" duration="23136000" />
       <workItem from="1627547710687" duration="18468000" />
-      <workItem from="1627634125155" duration="3469000" />
+      <workItem from="1627634125155" duration="8952000" />
     </task>
     <task id="LOCAL-00001" summary="ROLES">
       <created>1627054210735</created>
@@ -345,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627574801387</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Filtering &amp; Sorting">
+      <created>1627638150959</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627638150959</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +370,8 @@
     <MESSAGE value="Mailer Send" />
     <MESSAGE value="Upload Image" />
     <MESSAGE value="Filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filter" />
+    <MESSAGE value="Filtering &amp; Sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filtering &amp; Sorting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="187" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626267930245">
@@ -388,10 +398,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="704" y="141" width="501" height="775" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.27.1920.997@0.27.1920.997" timestamp="1626949607268" />
-    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2" timestamp="1627574801330">
+    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2" timestamp="1627638156288">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1627574801330" />
+    <state x="525" y="119" width="860" height="820" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1627638156288" />
     <state width="1291" height="164" key="GridCell.Tab.0.bottom" timestamp="1627635026831">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
@@ -416,10 +426,10 @@
       <screen x="0" y="27" width="1920" height="997" />
     </state>
     <state x="383" y="178" width="1022" height="737" key="SettingsEditor/0.27.1920.997@0.27.1920.997" timestamp="1626358950332" />
-    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1627574819251">
+    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1627638167947">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1627574819251" />
+    <state x="555" y="261" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1627638167947" />
     <state x="839" y="412" width="367" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1627048453505">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
