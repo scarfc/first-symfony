@@ -1,6 +1,29 @@
 easy_admin:
     entities:
-        # List the entity class name you want to manage
-        - App\Entity\BlogPost
-#        - App\Entity\Category
-#        - App\Entity\User
+#        # List the entity class name you want to manage
+        BlogPost:
+              class: App\Entity\BlogPost
+              list:
+                actions: [ { name: 'show' } ]
+              show:
+                  fields:
+                    - id
+                    - title
+                    - published
+                    - { property: 'comments', template: 'comments.html.twig' }
+                    - images
+        Comment:
+              class: App\Entity\Comment
+        User:
+              class: App\Entity\User
+              controller: App\Controller\UserAdminController
+        Image:
+              class: App\Entity\Image
+              list:
+                  fields:
+                    - id
+                    - { property: 'url', type: 'image'}
+              form:
+                  fields:
+                    - { property: 'file', type: 'Vich\UploaderBundle\Form\Type\VichFileType' }
+

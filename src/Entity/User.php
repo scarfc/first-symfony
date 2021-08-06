@@ -304,10 +304,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         $this->retypedPassword = $retypedPassword;
     }
-    public function __toString(): string
-    {
-        return $this->name;
-    }
 
     public function getNewPassword(): ?string
     {
@@ -367,6 +363,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setConfirmationToken($confirmationToken): void
     {
         $this->confirmationToken = $confirmationToken;
+    }
+
+    public function __toString(): string
+    {
+        return $this->name;
     }
 
 
